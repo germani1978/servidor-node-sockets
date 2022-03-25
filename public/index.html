@@ -25,8 +25,9 @@
         
         socket.emit('mensaje' , {name:'fernando'});
 
-        socket.on('mensaje1', function ( valor ) {
-            console.log(valor);
+        socket.on('active-bands', function ( valor ) {
+            console.clear();
+            console.table(valor);
         });
 
     </script>
